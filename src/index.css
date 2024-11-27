@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.text-gold {
+  color: #D4AF37;
+}
+
+.bg-gold {
+  background-color: #D4AF37;
+}
+
+.hover\:bg-gold:hover {
+  background-color: #D4AF37;
+}
+
+.hover\:text-gold:hover {
+  color: #D4AF37;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+  animation-play-state: paused;
+}
+
+.animate-fade-in.delay-200 {
+  animation-delay: 200ms;
+}
+
+.animate-fade-in.delay-400 {
+  animation-delay: 400ms;
+}
+
+.animate-fade-in.delay-600 {
+  animation-delay: 600ms;
+}
+
+.animate-fade-in.delay-800 {
+  animation-delay: 800ms;
+}
+
+/* Start animation when element is in view */
+.animate-fade-in.in-view {
+  animation-play-state: running;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  opacity: 0;
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* Add staggered delays for consecutive paragraphs */
+.fade-up:nth-child(1) { animation-delay: 0s; }
+.fade-up:nth-child(2) { animation-delay: 0.2s; }
+.fade-up:nth-child(3) { animation-delay: 0.4s; }
+.fade-up:nth-child(4) { animation-delay: 0.6s; }
+.fade-up:nth-child(5) { animation-delay: 0.8s; }

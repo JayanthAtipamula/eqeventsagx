@@ -37,25 +37,25 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-20 bg-black relative">
+    <section id="services" className="py-8 md:py-12 bg-black relative">
       <Parallax speed={20} className="relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Our Services</h2>
+          <div className="text-center mb-8 md:mb-16">
+            <h2 className="text-4xl font-bold text-white mb-3 md:mb-4">Our Services</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
               Delivering exceptional entertainment and production services for events of all sizes
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             {services.map((service, index) => (
               <Parallax
                 key={index}
                 speed={10}
                 translateY={[0, 25]}
-                className="bg-gray-800 rounded-lg p-6 transform transition-transform duration-300 hover:scale-105"
+                className="bg-gray-800 rounded-lg p-4 md:p-6 transform transition-transform duration-300 hover:scale-105"
               >
-                <div className="text-gold mb-4">{service.icon}</div>
+                <div className="text-gold mb-3 md:mb-4">{service.icon}</div>
                 <h3 className="text-xl font-semibold text-white mb-2">{service.title}</h3>
                 <p className="text-gray-400">{service.description}</p>
               </Parallax>

@@ -1,8 +1,14 @@
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
 import { Parallax } from 'react-scroll-parallax';
+import { scrollToSection } from '../utils/scroll';
 
 const Hero = () => {
+  const handleBookClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    scrollToSection('contact');
+  };
+
   return (
     <div className="relative h-screen overflow-hidden">
       <Parallax speed={-20} className="absolute inset-0">
@@ -25,7 +31,10 @@ const Hero = () => {
           Creating Unforgettable Moments Through Music and Production Excellence
         </p>
         <div className="relative">
-          <button className="bg-gold hover:bg-gold/90 text-white px-8 py-3 rounded-full text-lg transition-all duration-300 transform hover:scale-105">
+          <button 
+            onClick={handleBookClick}
+            className="bg-gold hover:bg-gold/90 text-white px-8 py-3 rounded-full text-lg transition-all duration-300 transform hover:scale-105"
+          >
             Book Your Event
           </button>
           <span className="animate-wave"></span>

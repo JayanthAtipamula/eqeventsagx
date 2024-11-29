@@ -42,10 +42,12 @@ const ImageCard = ({ src, index }: { src: string; index: number }) => {
 
 const Gallery = () => {
   return (
-    <section className="py-16 bg-black">
+    <section className="py-8 md:py-12 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-semibold text-white text-center mb-10">Event Gallery</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <h2 className="text-5xl md:text-7xl font-bold text-white text-center mb-8 md:mb-16 opacity-0 animate-fade-up">
+          Event <span className="text-gold">Gallery</span>
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {images.map((image, index) => (
             <ImageCard key={index} src={image} index={index} />
           ))}

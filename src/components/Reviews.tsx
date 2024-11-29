@@ -82,7 +82,7 @@ const Reviews = () => {
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative h-full flex items-center justify-center text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white">
-            Client <span className="text-gold">Reviews</span>
+            Client Reviews <span className="text-gold"></span>
           </h1>
         </div>
       </section>

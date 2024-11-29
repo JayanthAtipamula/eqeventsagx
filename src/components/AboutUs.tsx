@@ -42,7 +42,7 @@ const AboutUs = () => {
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative h-full flex items-center justify-center text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white">
-            About <span className="text-gold">Us</span>
+            About Us<span className="text-gold"></span>
           </h1>
         </div>
       </section>

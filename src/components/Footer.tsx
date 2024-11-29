@@ -10,7 +10,13 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold text-gold mb-4">EQ Events</h3>
+            <div className="mb-4">
+              <img 
+                src="https://i.postimg.cc/Z5gzZ019/Untitled-787-x-350-px.png" 
+                alt="EQ Events Logo" 
+                className="h-12 w-auto"
+              />
+            </div>
             <p className="text-gray-400">
               Creating unforgettable moments through music and production excellence.
             </p>

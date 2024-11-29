@@ -14,7 +14,7 @@ const Hero = () => {
             backgroundPosition: 'center',
           }}
         />
-        <div className="absolute inset-0 bg-black/70" /> {/* Increased overlay opacity for better text visibility */}
+        <div className="absolute inset-0 bg-black/70" />
       </Parallax>
       
       <Parallax speed={-5} className="relative h-full flex flex-col items-center justify-center text-center px-4">
@@ -24,9 +24,14 @@ const Hero = () => {
         <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-2xl">
           Creating Unforgettable Moments Through Music and Production Excellence
         </p>
-        <button className="bg-gold hover:bg-gold/90 text-white px-8 py-3 rounded-full text-lg transition-all duration-300 transform hover:scale-105">
-          Book Your Event
-        </button>
+        <div className="relative">
+          <button className="bg-gold hover:bg-gold/90 text-white px-8 py-3 rounded-full text-lg transition-all duration-300 transform hover:scale-105">
+            Book Your Event
+          </button>
+          <span className="animate-wave"></span>
+          <span className="animate-wave animation-delay-2"></span>
+          <span className="animate-wave animation-delay-4"></span>
+        </div>
         
         <div className="absolute bottom-8 animate-bounce">
           <ChevronDown className="text-white" size={32} />

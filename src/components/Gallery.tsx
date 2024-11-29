@@ -14,9 +14,9 @@ const ImageCard = ({ src, index }: { src: string; index: number }) => {
   const [isError, setIsError] = useState(false);
 
   return (
-    <div className="rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 bg-gray-100">
+    <div className="rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 bg-gray-800">
       {isLoading && (
-        <div className="w-full h-full aspect-[4/3] animate-pulse bg-gray-200" />
+        <div className="w-full h-full aspect-[4/3] animate-pulse bg-gray-700" />
       )}
       <img
         src={src}
@@ -32,7 +32,7 @@ const ImageCard = ({ src, index }: { src: string; index: number }) => {
         }}
       />
       {isError && (
-        <div className="w-full h-full aspect-[4/3] flex items-center justify-center bg-gray-100 text-gray-500">
+        <div className="w-full h-full aspect-[4/3] flex items-center justify-center bg-gray-800 text-gray-400">
           Failed to load image
         </div>
       )}
@@ -42,9 +42,9 @@ const ImageCard = ({ src, index }: { src: string; index: number }) => {
 
 const Gallery = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-semibold text-gray-900 text-center mb-10">Event Gallery</h2>
+        <h2 className="text-3xl font-semibold text-white text-center mb-10">Event Gallery</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {images.map((image, index) => (
             <ImageCard key={index} src={image} index={index} />

@@ -86,3 +86,28 @@
 .fade-up:nth-child(3) { animation-delay: 0.4s; }
 .fade-up:nth-child(4) { animation-delay: 0.6s; }
 .fade-up:nth-child(5) { animation-delay: 0.8s; }
+
+/* Wave animation */
+@keyframes wave {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.animate-wave {
+  @apply absolute inset-0 rounded-full border-2 border-gold pointer-events-none;
+  animation: wave 2s infinite;
+}
+
+.animation-delay-2 {
+  animation-delay: 0.6s;
+}
+
+.animation-delay-4 {
+  animation-delay: 1.2s;
+}

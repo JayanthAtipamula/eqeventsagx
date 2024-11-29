@@ -39,7 +39,13 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <Link to="/" className="text-2xl font-bold text-white">EQ <span className="text-gold">Events</span></Link>
+            <Link to="/" className="flex items-center">
+              <img 
+                src="https://i.postimg.cc/Z5gzZ019/Untitled-787-x-350-px.png" 
+                alt="EQ Events Logo" 
+                className="h-12 w-auto"
+              />
+            </Link>
           </div>
           
           <div className="hidden md:block">

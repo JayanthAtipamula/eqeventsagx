@@ -19,7 +19,7 @@ const Hero = () => {
       
       <Parallax speed={-5} className="relative h-full flex flex-col items-center justify-center text-center px-4">
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-          EQ <span className="text-gold">Events</span>
+          EQ <span className="text-gold">EVENTS</span>
         </h1>
         <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-2xl">
           Creating Unforgettable Moments Through Music and Production Excellence

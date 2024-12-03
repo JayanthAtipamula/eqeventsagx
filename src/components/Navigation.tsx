@@ -79,7 +79,7 @@ const Navigation = () => {
           <div className="hidden md:flex items-center space-x-6">
             <div className="flex items-center space-x-2 text-white">
               <Phone size={20} className="text-gold" />
-              <span className="font-semibold">+44 123 456 7890</span>
+              <span className="font-semibold">0207 459 4656</span>
             </div>
             <div className="h-8 w-px bg-gray-700" />
             <div className="flex items-center space-x-4">
@@ -141,7 +141,7 @@ const Navigation = () => {
           <div className="px-5 py-4 border-t border-gray-700">
             <div className="flex items-center space-x-2 text-white mb-4">
               <Phone size={20} className="text-gold" />
-              <span className="font-semibold">+44 123 456 7890</span>
+              <span className="font-semibold">0207 459 4656</span>
             </div>
             <div className="flex items-center space-x-6">
               {socialLinks.map((social) => (

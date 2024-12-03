@@ -25,13 +25,13 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <div className="space-y-2">
-              <a href="mailto:info@paragonevents.com" className="flex items-center text-gray-400 hover:text-gold">
+              <a href="mailto:Contact@eqeventsuk.com" className="flex items-center text-gray-400 hover:text-gold">
                 <Mail className="w-5 h-5 mr-2" />
-                info@EQevents.com
+                Contact@eqeventsuk.com
               </a>
-              <a href="tel:+1234567890" className="flex items-center text-gray-400 hover:text-gold">
+              <a href="tel:02074594656" className="flex items-center text-gray-400 hover:text-gold">
                 <Phone className="w-5 h-5 mr-2" />
-                (123) 456-7890
+                0207 459 4656
               </a>
             </div>
           </div>
@@ -67,10 +67,9 @@ const Footer = () => {
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
               <Link to="/terms" className="text-gray-400 hover:text-gold transition-colors">Terms & Conditions</Link>
               <Link to="/privacy" className="text-gray-400 hover:text-gold transition-colors">Privacy Policy</Link>
-              <Link to="/cookies" className="text-gray-400 hover:text-gold transition-colors">Cookie Policy</Link>
             </div>
             <div className="flex flex-col md:flex-row items-center gap-4">
-              <p>&copy; {currentYear} EQ Events. All rights reserved.</p>
+              <p>&copy; {currentYear} EQ EVENTS UK LIMITED. All rights reserved.</p>
               <p className="text-gray-400 flex items-center space-x-1">
                 <span>Made with</span>
                 <Heart size={16} className="text-red-500 fill-current mx-1" />

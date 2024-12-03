@@ -96,7 +96,7 @@ const Reviews = () => {
           </div>
           <div className="flex items-center space-x-2 text-black">
             <Phone size={24} />
-            <span className="text-xl font-semibold">+44 123 456 7890</span>
+            <span className="text-xl font-semibold">0207 459 4656</span>
           </div>
         </div>
       </div>

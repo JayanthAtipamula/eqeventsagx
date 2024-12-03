@@ -56,7 +56,7 @@ const AboutUs = () => {
           </div>
           <div className="flex items-center space-x-2 text-black">
             <Phone size={24} />
-            <span className="text-xl font-semibold">+44 123 456 7890</span>
+            <span className="text-xl font-semibold">0207 459 4656</span>
           </div>
         </div>
       </div>
@@ -66,36 +66,108 @@ const AboutUs = () => {
 
       {/* About Us Content */}
       <section className="py-20 bg-gray-900 relative z-10">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-12">
-            <div className="text-center fade-up">
-              <p className="text-lg text-gray-300 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              </p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-4xl font-bold text-white mb-6">About <span className="text-gold">EQ Events UK</span></h2>
+              <div className="prose prose-lg prose-invert">
+                <p className="text-gray-300">
+                  EQ Events UK Limited is a premier event production and entertainment company, specializing in creating extraordinary experiences for corporate events, weddings, and private celebrations. With our state-of-the-art technology and creative expertise, we transform ordinary occasions into unforgettable moments.
+                </p>
+                
+                <h3 className="text-2xl font-bold text-gold mt-8 mb-4">Our Comprehensive Services</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300">
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-3">Wedding Services</h4>
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>Full Service Asian Wedding Audio-Visual</li>
+                      <li>Traditional & Contemporary Weddings</li>
+                      <li>Destination Weddings</li>
+                      <li>Luxury Wedding Productions</li>
+                      <li>Wedding Entertainment</li>
+                      <li>Wedding Photography & Videography</li>
+                      <li>Bespoke Wedding Packages</li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-3">Corporate Events</h4>
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>Corporate Entertainment</li>
+                      <li>Corporate Event Management</li>
+                      <li>Event Production Services</li>
+                      <li>Corporate Gathering Solutions</li>
+                      <li>Video Production</li>
+                      <li>Custom Event Design</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <h3 className="text-2xl font-bold text-gold mt-8 mb-4">Technical Excellence</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300">
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-3">Audio-Visual Services</h4>
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>Professional DJ Services</li>
+                      <li>Event Lighting Design</li>
+                      <li>Intelligent Lighting Systems</li>
+                      <li>Video Mapping</li>
+                      <li>Live Performance Setup</li>
+                      <li>Open Format DJs</li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-3">Event Design</h4>
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>Custom Set Designs</li>
+                      <li>Stage Design & Production</li>
+                      <li>Lighting Design</li>
+                      <li>Event Planning & Management</li>
+                      <li>Bespoke Service Packages</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <p className="text-gray-300 mt-8">
+                  At EQ Events UK, we pride ourselves on delivering exceptional service and innovative solutions for every event. Our team of experienced professionals ensures that each project is executed with precision, creativity, and attention to detail, making your vision come to life.
+                </p>
+              </div>
             </div>
 
-            <div className="text-center fade-up">
-              <p className="text-lg text-gray-300 leading-relaxed">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-              </p>
-            </div>
+            <div className="space-y-8">
+              <div className="bg-gray-800 rounded-lg p-8">
+                <h3 className="text-2xl font-bold text-gold mb-4">Why Choose Us</h3>
+                <ul className="space-y-4 text-gray-300">
+                  <li className="flex items-start">
+                    <span className="text-gold mr-2">✓</span>
+                    <span>Comprehensive event production services</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-gold mr-2">✓</span>
+                    <span>State-of-the-art equipment and technology</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-gold mr-2">✓</span>
+                    <span>Experienced and professional team</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-gold mr-2">✓</span>
+                    <span>Customized solutions for every event</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-gold mr-2">✓</span>
+                    <span>Attention to detail and perfect execution</span>
+                  </li>
+                </ul>
+              </div>
 
-            <div className="text-center fade-up">
-              <p className="text-lg text-gray-300 leading-relaxed">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
-              </p>
-            </div>
-
-            <div className="text-center fade-up">
-              <p className="text-lg text-gray-300 leading-relaxed">
-                Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis.
-              </p>
-            </div>
-
-            <div className="text-center fade-up">
-              <p className="text-lg text-gray-300 leading-relaxed">
-                Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.
-              </p>
+              <div className="bg-gray-800 rounded-lg p-8">
+                <h3 className="text-2xl font-bold text-gold mb-4">Our Commitment</h3>
+                <p className="text-gray-300">
+                  We are committed to creating extraordinary experiences that exceed expectations. From intimate gatherings to grand celebrations, we bring creativity, technical expertise, and professional excellence to every event we produce.
+                </p>
+              </div>
             </div>
           </div>
         </div>

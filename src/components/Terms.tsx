@@ -29,7 +29,7 @@ const Terms = () => {
           </div>
           <div className="flex items-center space-x-2 text-black">
             <Phone size={24} />
-            <span className="text-xl font-semibold">+44 123 456 7890</span>
+            <span className="text-xl font-semibold">0207 459 4656</span>
           </div>
         </div>
       </div>
@@ -42,39 +42,36 @@ const Terms = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-12">
             <div className="prose prose-lg prose-invert max-w-none">
-              <h2 className="text-3xl font-bold text-gold mb-6">1. Introduction</h2>
+              <h2 className="text-3xl font-bold text-gold mb-6">1. Website Usage</h2>
               <p className="text-gray-300">
-                These Terms and Conditions govern your use of EQ Events' services and website. By accessing or using our services, you agree to be bound by these terms.
+                By accessing and using the EQ Events website, you accept and agree to be bound by these terms and conditions of use.
               </p>
 
               <h2 className="text-3xl font-bold text-gold mb-6 mt-12">2. Services</h2>
               <p className="text-gray-300">
-                EQ Events provides professional DJ and event production services. The specific details of services will be outlined in individual booking agreements.
+                EQ Events provides DJ and event production services. The specific details of services will be discussed and agreed upon directly with clients.
               </p>
 
-              <h2 className="text-3xl font-bold text-gold mb-6 mt-12">3. Bookings & Payments</h2>
+              <h2 className="text-3xl font-bold text-gold mb-6 mt-12">3. Intellectual Property</h2>
               <p className="text-gray-300">
-                All bookings are subject to availability and confirmation. A deposit may be required to secure your booking date. Full payment terms will be specified in your booking agreement.
+                All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of EQ Events and is protected by copyright laws.
               </p>
 
-              <h2 className="text-3xl font-bold text-gold mb-6 mt-12">4. Cancellation Policy</h2>
+              <h2 className="text-3xl font-bold text-gold mb-6 mt-12">4. Privacy</h2>
               <p className="text-gray-300">
-                Cancellation policies vary depending on the type of event and notice period. Please refer to your booking agreement for specific terms.
+                We respect your privacy and handle all personal information in accordance with UK data protection laws. For more details, please refer to our Privacy Policy.
               </p>
 
-              <h2 className="text-3xl font-bold text-gold mb-6 mt-12">5. Equipment & Setup</h2>
+              <h2 className="text-3xl font-bold text-gold mb-6 mt-12">5. Changes to Terms</h2>
               <p className="text-gray-300">
-                We provide professional-grade equipment for all events. Specific requirements for setup and venue access should be discussed and agreed upon in advance.
+                We may update these terms from time to time. Any changes will be posted on this page.
               </p>
 
-              <h2 className="text-3xl font-bold text-gold mb-6 mt-12">6. Liability</h2>
+              <h2 className="text-3xl font-bold text-gold mb-6 mt-12">6. Contact Us</h2>
               <p className="text-gray-300">
-                EQ Events maintains appropriate insurance coverage. However, we are not liable for circumstances beyond our reasonable control.
-              </p>
-
-              <h2 className="text-3xl font-bold text-gold mb-6 mt-12">7. Changes to Terms</h2>
-              <p className="text-gray-300">
-                We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting to our website.
+                For any questions about these terms, please contact us at:<br />
+                Email: Contact@eqeventsuk.com<br />
+                Phone: 0207 459 4656
               </p>
             </div>
           </div>

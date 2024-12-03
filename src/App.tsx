@@ -12,7 +12,6 @@ import AboutUs from './components/AboutUs';
 import Reviews from './components/Reviews';
 import Terms from './components/Terms';
 import Privacy from './components/Privacy';
-import Cookies from './components/Cookies';
 import ScrollToTop from './components/ScrollToTop';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -37,7 +36,6 @@ function App() {
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/privacy" element={<Privacy />} />
-            <Route path="/cookies" element={<Cookies />} />
           </Routes>
           <Footer />
         </div>

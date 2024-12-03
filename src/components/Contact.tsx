@@ -119,8 +119,21 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Contact Information and Business Hours */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Contact Information, Logo, and Business Hours */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Logo Box */}
+          <div className="bg-gray-800 p-8 rounded-lg flex flex-col items-center">
+            <img 
+              src="https://i.postimg.cc/Z5gzZ019/Untitled-787-x-350-px.png" 
+              alt="Company Logo" 
+              className="w-full max-w-[300px] h-auto mb-6"
+            />
+            <p className="text-gray-400 text-center">
+              Creating Unforgettable Moments, One Event at a Time
+            </p>
+          </div>
+
+          {/* Contact Information */}
           <div className="bg-gray-800 p-8 rounded-lg">
             <h3 className="text-2xl font-semibold text-white mb-6">Contact Information</h3>
             <div className="space-y-6">
@@ -128,21 +141,21 @@ const Contact = () => {
                 <Phone className="w-6 h-6 text-gold mt-1" />
                 <div>
                   <p className="text-white font-medium">Call Us</p>
-                  <p className="text-gray-400">(123) 456-7890</p>
+                  <p className="text-gray-400">0207 459 4656</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <Mail className="w-6 h-6 text-gold mt-1" />
                 <div>
                   <p className="text-white font-medium">Email Us</p>
-                  <p className="text-gray-400">info@EQevents.com</p>
+                  <p className="text-gray-400">Contact@eqeventsuk.com</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <MapPin className="w-6 h-6 text-gold mt-1" />
                 <div>
                   <p className="text-white font-medium">Visit Us</p>
-                  <p className="text-gray-400">123 Event Street, Suite 100<br />Los Angeles, CA 90012</p>
+                  <p className="text-gray-400">Ashton Rd<br />Harold Hill, Romford RM3 8NF</p>
                 </div>
               </div>
             </div>

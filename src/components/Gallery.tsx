@@ -1,12 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+
+// Import images directly from assets
+import img1 from '../assets/eqimages/img1.jpg';
+import img2 from '../assets/eqimages/img2.jpg';
+import img3 from '../assets/eqimages/img3.jpg';
+import img4 from '../assets/eqimages/img4.jpg';
+import img5 from '../assets/eqimages/img5.jpg';
+import img6 from '../assets/eqimages/img6.jpg';
+import img7 from '../assets/eqimages/img7.jpg';
 
 const images = [
-  'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=800&q=75',
-  'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=75',
-  'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=800&q=75',
-  'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?auto=format&fit=crop&w=800&q=75',
-  'https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=800&q=75',
-  'https://images.unsplash.com/photo-1574879948818-1cfda7aa5b1a?auto=format&fit=crop&w=800&q=75'
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6
 ];
 
 const ImageCard = ({ src, index }: { src: string; index: number }) => {

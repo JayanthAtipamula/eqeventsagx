@@ -23,13 +23,22 @@ const Hero = () => {
       </div>
       
       <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extralight text-white mb-2 font-sans tracking-[0.2em] uppercase">
+        <h1 
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-white mb-3 tracking-[0.05em] uppercase"
+          style={{ fontFamily: 'Orbitron, sans-serif' }}
+        >
           Luxury Asian &
         </h1>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extralight text-white mb-6 font-sans tracking-[0.2em] uppercase">
+        <h1 
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-white mb-10 tracking-[0.05em] uppercase"
+          style={{ fontFamily: 'Orbitron, sans-serif' }}
+        >
           Mixed Wedding Djs
         </h1>
-        <p className="text-lg sm:text-xl md:text-2xl text-white/80 mb-12 max-w-3xl font-light tracking-[0.15em]">
+        <p 
+          className="text-base sm:text-lg md:text-xl text-white/80 mb-16 max-w-3xl font-light tracking-[0.1em]"
+          style={{ fontFamily: 'Orbitron, sans-serif' }}
+        >
           Creating Unforgettable Moments Through Music and Production Excellence
         </p>
         <div className="relative">

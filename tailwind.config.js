@@ -10,7 +10,7 @@ export default {
         bounce: 'bounce 1s infinite',
       },
       fontFamily: {
-        'sans': ['Helvetica Neue', 'Arial', 'sans-serif'],
+        'orbitron': ['Orbitron', 'sans-serif'],
       },
       letterSpacing: {
         'widest': '.25em',

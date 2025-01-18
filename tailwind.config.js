@@ -10,7 +10,8 @@ export default {
         bounce: 'bounce 1s infinite',
       },
       fontFamily: {
-        'orbitron': ['Orbitron', 'sans-serif'],
+        'audiowide': ['Audiowide', 'cursive'],
+        'rajdhani': ['Rajdhani', 'sans-serif'],
       },
       letterSpacing: {
         'widest': '.25em',

@@ -9,6 +9,10 @@ export default {
       animation: {
         bounce: 'bounce 1s infinite',
       },
+      fontFamily: {
+        'playfair': ['Playfair Display', 'serif'],
+        'montserrat': ['Montserrat', 'sans-serif'],
+      },
     },
   },
   plugins: [],

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import Logo from '../assets/EQEVENTSLOGO.png';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -124,7 +125,7 @@ const Contact = () => {
           {/* Logo Box */}
           <div className="bg-gray-800 p-8 rounded-lg flex flex-col items-center">
             <img 
-              src="https://i.postimg.cc/Z5gzZ019/Untitled-787-x-350-px.png" 
+              src={Logo} 
               alt="Company Logo" 
               className="w-full max-w-[300px] h-auto mb-6"
             />

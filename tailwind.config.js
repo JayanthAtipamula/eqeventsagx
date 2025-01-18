@@ -10,6 +10,7 @@ export default {
         bounce: 'bounce 1s infinite',
       },
       fontFamily: {
+        'sans': ['Helvetica Neue', 'Arial', 'sans-serif'],
         'playfair': ['Playfair Display', 'serif'],
         'montserrat': ['Montserrat', 'sans-serif'],
       },

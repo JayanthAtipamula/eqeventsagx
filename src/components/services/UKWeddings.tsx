@@ -1,6 +1,6 @@
 import React from 'react';
-import { Parallax } from 'react-scroll-parallax';
 import { Music, Star, Clock, Users } from 'lucide-react';
+import ServiceLayout from './ServiceLayout';
 
 const features = [
   {
@@ -27,23 +27,22 @@ const features = [
 
 const UKWeddings = () => {
   return (
-    <div className="min-h-screen bg-black text-white">
-      {/* Hero Section */}
-      <div className="relative h-[40vh] bg-gradient-to-b from-black to-transparent">
-        <div className="absolute inset-0 bg-[url('/images/wedding-dj.jpg')] bg-cover bg-center opacity-50" />
-        <div className="relative h-full flex items-center justify-center">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-2">UK Weddings</h1>
-            <p className="text-lg md:text-xl max-w-2xl mx-auto px-4">
-              Creating unforgettable moments for your special day
-            </p>
+    <ServiceLayout>
+      <div className="relative">
+        <div className="relative h-[40vh] bg-gradient-to-b from-black to-transparent">
+          <div className="absolute inset-0 bg-[url('/images/wedding-dj.jpg')] bg-cover bg-center opacity-50" />
+          <div className="relative h-full flex items-center justify-center">
+            <div className="text-center">
+              <h1 className="text-4xl md:text-5xl font-bold mb-2">UK Weddings</h1>
+              <p className="text-lg md:text-xl max-w-2xl mx-auto px-4">
+                Creating unforgettable moments for your special day
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Main Content */}
-      <div className="container mx-auto px-4 py-6">
-        <Parallax speed={10}>
+        {/* Main Content */}
+        <div className="container mx-auto px-4 py-6">
           <div className="max-w-3xl mx-auto mb-6">
             <h2 className="text-2xl md:text-3xl font-bold mb-3">Your Perfect Wedding Entertainment</h2>
             <p className="text-gray-300 mb-2">
@@ -53,23 +52,19 @@ const UKWeddings = () => {
               From the moment your guests arrive until the last dance, we ensure seamless musical entertainment that reflects your style and keeps your dance floor filled with joy and energy.
             </p>
           </div>
-        </Parallax>
 
-        {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-          {features.map((feature, index) => (
-            <Parallax key={index} speed={5}>
-              <div className="bg-gray-900 p-4 rounded-lg">
+          {/* Features Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            {features.map((feature, index) => (
+              <div key={index} className="bg-gray-900 p-4 rounded-lg">
                 <div className="text-gold mb-2">{feature.icon}</div>
                 <h3 className="text-lg font-semibold mb-1">{feature.title}</h3>
                 <p className="text-gray-400 text-sm">{feature.description}</p>
               </div>
-            </Parallax>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        {/* Call to Action */}
-        <Parallax speed={5}>
+          {/* Call to Action */}
           <div className="text-center">
             <h3 className="text-xl font-bold mb-2">Ready to Plan Your Wedding Entertainment?</h3>
             <p className="text-gray-300 mb-4">Contact us today to discuss your wedding plans</p>
@@ -77,9 +72,9 @@ const UKWeddings = () => {
               Get in Touch
             </button>
           </div>
-        </Parallax>
+        </div>
       </div>
-    </div>
+    </ServiceLayout>
   );
 };
 

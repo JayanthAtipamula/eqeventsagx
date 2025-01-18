@@ -1,6 +1,7 @@
 import React from 'react';
 import { Facebook, Instagram, Youtube, Mail, Phone, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Logo from '../assets/EQEVENTSLOGO.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,7 +13,7 @@ const Footer = () => {
           <div>
             <div className="mb-4">
               <img 
-                src="https://i.postimg.cc/Z5gzZ019/Untitled-787-x-350-px.png" 
+                src={Logo}
                 alt="EQ Events Logo" 
                 className="h-12 w-auto"
               />

@@ -1,165 +1,136 @@
-import React from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Menu, Phone, Facebook, Instagram, Twitter } from 'lucide-react';
+import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
+import Logo from '../assets/EQEVENTSLOGO.png';
 import { scrollToSection } from '../utils/scroll';
 
 const Navigation = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  const navigate = useNavigate();
-  const isActive = (path: string) => location.pathname === path;
-  const [isOpen, setIsOpen] = React.useState(false);
 
-  const handleSectionClick = (e: React.MouseEvent, sectionId: string) => {
+  const handleContactClick = (e: React.MouseEvent) => {
     e.preventDefault();
     if (location.pathname !== '/') {
-      navigate('/');
-      setTimeout(() => {
-        scrollToSection(sectionId);
-      }, 100);
+      window.location.href = '/#contact';
     } else {
-      scrollToSection(sectionId);
+      scrollToSection('contact');
     }
-    setIsOpen(false);
   };
 
-  const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Reviews', href: '/reviews' },
-  ];
-
-  const socialLinks = [
-    { icon: Facebook, href: 'https://facebook.com', label: 'Facebook' },
-    { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
-  ];
+  const handleServicesClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (location.pathname !== '/') {
+      window.location.href = '/#services';
+    } else {
+      scrollToSection('services');
+    }
+  };
 
   return (
-    <nav className="fixed w-full bg-black/80 backdrop-blur-sm z-50">
+    <nav className="w-full z-50 absolute top-6 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          <div className="flex-shrink-0">
-            <Link to="/" className="flex items-center">
+        <div className="flex items-center justify-between h-24">
+          {/* Left Menu Items - Desktop */}
+          <div className="hidden md:flex md:items-center md:space-x-8">
+            <Link to="/" className="text-white hover:text-gold transition-colors text-lg">
+              Home
+            </Link>
+            <Link to="/about" className="text-white hover:text-gold transition-colors text-lg">
+              About
+            </Link>
+            <button
+              onClick={handleServicesClick}
+              className="text-white hover:text-gold transition-colors text-lg bg-transparent border-none cursor-pointer"
+            >
+              Services
+            </button>
+            <Link to="/reviews" className="text-white hover:text-gold transition-colors text-lg">
+              Reviews
+            </Link>
+          </div>
+
+          {/* Mobile Menu Button - Left side */}
+          <div className="md:hidden flex items-center">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-white hover:text-gold"
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+
+          {/* Center Logo */}
+          <div className="flex-shrink-0 absolute left-1/2 transform -translate-x-1/2">
+            <Link to="/">
               <img 
-                src="https://i.postimg.cc/Z5gzZ019/Untitled-787-x-350-px.png" 
+                src={Logo}
                 alt="EQ Events Logo" 
-                className="h-12 w-auto"
+                className="h-20 w-auto"
               />
             </Link>
           </div>
-          
+
+          {/* Right Contact Button */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-center space-x-8">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className={`text-white hover:text-gold transition-colors ${isActive(item.href) ? 'text-gold' : ''}`}
-                >
-                  {item.name}
-                </Link>
-              ))}
-              <a 
-                href="#services" 
-                className="text-white hover:text-gold transition-colors"
-                onClick={(e) => handleSectionClick(e, 'services')}
-              >
-                Services
-              </a>
-              <a 
-                href="#contact" 
-                className="text-white hover:text-gold transition-colors"
-                onClick={(e) => handleSectionClick(e, 'contact')}
-              >
-                Contact Us
-              </a>
-            </div>
-          </div>
-
-          <div className="hidden md:flex items-center space-x-6">
-            <div className="flex items-center space-x-2 text-white">
-              <Phone size={20} className="text-gold" />
-              <span className="font-semibold">0207 459 4656</span>
-            </div>
-            <div className="h-8 w-px bg-gray-700" />
-            <div className="flex items-center space-x-4">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white hover:text-gold transition-colors"
-                  aria-label={social.label}
-                >
-                  <social.icon size={20} />
-                </a>
-              ))}
-            </div>
-          </div>
-
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gold"
-            >
-              <Menu size={24} />
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {isOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={`block px-3 py-2 text-white hover:text-gold ${isActive(item.href) ? 'text-gold' : ''}`}
-                onClick={() => setIsOpen(false)}
-              >
-                {item.name}
-              </Link>
-            ))}
-            <a
-              href="#services"
-              className="block px-3 py-2 text-white hover:text-gold"
-              onClick={(e) => handleSectionClick(e, 'services')}
-            >
-              Services
-            </a>
-            <a
-              href="#contact"
-              className="block px-3 py-2 text-white hover:text-gold"
-              onClick={(e) => handleSectionClick(e, 'contact')}
+            <button 
+              onClick={handleContactClick}
+              className="bg-transparent border-2 border-gold text-gold px-8 py-3 rounded-full font-semibold hover:bg-gold hover:text-black transition-colors duration-300 text-lg"
             >
               Contact Us
-            </a>
+            </button>
           </div>
           
-          <div className="px-5 py-4 border-t border-gray-700">
-            <div className="flex items-center space-x-2 text-white mb-4">
-              <Phone size={20} className="text-gold" />
-              <span className="font-semibold">0207 459 4656</span>
-            </div>
-            <div className="flex items-center space-x-6">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white hover:text-gold transition-colors"
-                  aria-label={social.label}
-                >
-                  <social.icon size={20} />
-                </a>
-              ))}
+          {/* Empty div for mobile to maintain center logo */}
+          <div className="md:hidden w-10"></div>
+        </div>
+
+        {/* Mobile Menu */}
+        {isOpen && (
+          <div className="md:hidden mt-2">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-transparent backdrop-blur-sm">
+              <Link
+                to="/"
+                className="block px-3 py-2 text-white hover:text-gold transition-colors text-lg"
+                onClick={() => setIsOpen(false)}
+              >
+                Home
+              </Link>
+              <Link
+                to="/about"
+                className="block px-3 py-2 text-white hover:text-gold transition-colors text-lg"
+                onClick={() => setIsOpen(false)}
+              >
+                About
+              </Link>
+              <button
+                onClick={(e) => {
+                  handleServicesClick(e);
+                  setIsOpen(false);
+                }}
+                className="block w-full text-left px-3 py-2 text-white hover:text-gold transition-colors text-lg bg-transparent border-none cursor-pointer"
+              >
+                Services
+              </button>
+              <Link
+                to="/reviews"
+                className="block px-3 py-2 text-white hover:text-gold transition-colors text-lg"
+                onClick={() => setIsOpen(false)}
+              >
+                Reviews
+              </Link>
+              <button
+                onClick={(e) => {
+                  handleContactClick(e);
+                  setIsOpen(false);
+                }}
+                className="block w-full text-left px-3 py-2 text-white hover:text-gold transition-colors text-lg"
+              >
+                Contact Us
+              </button>
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </nav>
   );
 };

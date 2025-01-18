@@ -62,8 +62,8 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-16 md:py-24 bg-black relative">
-      <Parallax speed={20} className="relative z-10">
+    <section id="services" className="py-16 md:py-0 bg-black relative">
+      <Parallax speed={3} className="relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">Our Services</h2>

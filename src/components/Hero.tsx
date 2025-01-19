@@ -23,20 +23,20 @@ const Hero = () => {
       </div>
       
       <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
-        <h1 
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white mb-3 tracking-[0.05em] uppercase"
+        <h2 
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-2 tracking-[0.05em] uppercase"
           style={{ fontFamily: 'Audiowide, cursive' }}
         >
-          Luxury Asian &
-        </h1>
-        <h1 
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white mb-10 tracking-[0.05em] uppercase"
+          Premium Asian &
+        </h2>
+        <h2 
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-8 tracking-[0.05em] uppercase"
           style={{ fontFamily: 'Audiowide, cursive' }}
         >
-          Mixed Wedding Djs
-        </h1>
+          Multicultural Wedding Djs
+        </h2>
         <p 
-          className="text-base sm:text-lg md:text-xl text-white/80 mb-16 max-w-3xl tracking-[0.1em]"
+          className="text-sm sm:text-base md:text-lg text-white/80 mb-12 max-w-2xl tracking-[0.1em]"
           style={{ fontFamily: 'Rajdhani, sans-serif', fontWeight: 300 }}
         >
           Creating Unforgettable Moments Through Music and Production Excellence

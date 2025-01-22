@@ -25,13 +25,13 @@ const Hero = () => {
       <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
         <h2 
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-2 tracking-[0.05em] uppercase"
-          style={{ fontFamily: 'Audiowide, cursive' }}
+          style={{ fontFamily: 'Orbitron, sans-serif' }}
         >
           Premium Asian &
         </h2>
         <h2 
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-8 tracking-[0.05em] uppercase"
-          style={{ fontFamily: 'Audiowide, cursive' }}
+          style={{ fontFamily: 'Orbitron, sans-serif' }}
         >
           Multicultural Wedding Djs
         </h2>
